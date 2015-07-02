@@ -17,5 +17,9 @@ while True:
     # for operator in list_of_operators:
     for i in range(len(list_of_operators)):
         if tokens[0] == list_of_operators[i]:
+            if (tokens[0] != 'square' and tokens[0] != 'cube'):
         # if tokens[0] == operator :
-            print function[i]((float(tokens[1]),float(tokens[2]))
+                print list_of_functions[i](float(tokens[1]), float(tokens[2]))
+            else:
+                print list_of_functions[i](float(tokens[1]))
+
